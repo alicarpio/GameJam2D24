@@ -6,23 +6,24 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a4sdb"]
 
 [node name="Plant" type="Node2D"]
+position = Vector2(500, 239)
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(328, 151)
+position = Vector2(-5, -5)
 texture = ExtResource("1_ecwp4")
 script = ExtResource("2_t51nt")
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="Icon"]
-position = Vector2(7, 13)
+position = Vector2(1, 16)
 scale = Vector2(-9.30841, 9.08872)
 shape = SubResource("RectangleShape2D_a4sdb")
 
 [node name="Panel" type="Panel" parent="Icon"]
 visible = false
-offset_left = 2.0
-offset_top = -1.0
-offset_right = 271.0
-offset_bottom = 144.0
+offset_left = -125.0
+offset_top = 95.0
+offset_right = 144.0
+offset_bottom = 240.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Icon/Panel"]
 layout_mode = 0
@@ -47,3 +48,4 @@ text = "info"
 
 [connection signal="pressed" from="Icon/TouchScreenButton" to="Icon" method="_on_touch_screen_button_pressed"]
 [connection signal="released" from="Icon/TouchScreenButton" to="Icon" method="_on_touch_screen_button_released"]
+[connection signal="pressed" from="Icon/Button" to="Icon" method="_on_button_pressed"]

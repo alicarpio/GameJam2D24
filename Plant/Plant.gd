@@ -30,21 +30,16 @@ func _input(event):
 			newDeltaY = touchPos.y - deltaY
 			set_position(Vector2(newDeltaX, newDeltaY))
 
-	# Detección de clic para mostrar/ocultar información
-	if event is InputEventMouseButton and event.pressed:
-		if event.button_index == MOUSE_BUTTON_RIGHT and is_inside(event.position):
-			toggle_info_panel()
+	
 
-# Verifica si el clic está dentro del área del sprite
-func is_inside(touch_position):
-	var rect = Rect2(position - (texture.get_size() * 0.5), texture.get_size())
-	return rect.has_point(touch_position)
-
+func _on_button_pressed() -> void:
+	toggle_info_panel() # Replace with function body.
 # Función para mostrar/ocultar el panel de información
+
 func toggle_info_panel():
-	info_panel.visible = !info_panel.visible  # Alternar la visibilidad del panel
+	info_panel.visible = !info_panel.visible  # Alterna visibilidad del panel
 	if info_panel.visible:
 		info_richtext.text = "Tipo: Flor
 Riego: Semanal
 Info : lalalala
-"  # Texto de ejemplo
+"  # Texto de ejemplo # Asigna el texto de información de la planta
