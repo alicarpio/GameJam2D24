@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://hqnocmn15kwg"]
 
 [ext_resource type="Script" path="res://Home/home2.gd" id="1_8aaqq"]
-[ext_resource type="Texture2D" uid="uid://ekxu8aetei1k" path="res://assets/greenh.jpeg" id="1_xkrl3"]
+[ext_resource type="Texture2D" uid="uid://bbjk0pjq0tpn2" path="res://assets/home.png" id="2_11mok"]
 [ext_resource type="PackedScene" uid="uid://cqgra5lv7ydku" path="res://scene/plant.tscn" id="3_2u741"]
-[ext_resource type="PackedScene" path="res://scene/Inventory.tscn" id="4_082uo"]
+[ext_resource type="PackedScene" uid="uid://be03dvx6lutnd" path="res://scene/Inventory.tscn" id="4_082uo"]
 
 [sub_resource type="FontVariation" id="FontVariation_178p4"]
 
@@ -13,19 +13,19 @@
 script = ExtResource("1_8aaqq")
 
 [node name="Bakground" type="Sprite2D" parent="."]
-position = Vector2(578, 327)
-scale = Vector2(0.72, 0.717724)
-texture = ExtResource("1_xkrl3")
+position = Vector2(577.68, 301.263)
+scale = Vector2(1.235, 0.761206)
+texture = ExtResource("2_11mok")
 
 [node name="Plant" parent="Bakground" instance=ExtResource("3_2u741")]
-position = Vector2(-19.4444, 5.57318)
+position = Vector2(-19.1741, -123.833)
 scale = Vector2(0.543996, 0.536255)
 
 [node name="ColorRect" type="ColorRect" parent="Bakground"]
-offset_left = -120.833
-offset_top = 323.244
-offset_right = 150.167
-offset_bottom = 401.244
+offset_left = -117.96
+offset_top = -319.575
+offset_right = 153.04
+offset_bottom = -241.575
 size_flags_vertical = 0
 color = Color(0.269755, 0.299167, 0.00297564, 1)
 metadata/_edit_use_anchors_ = true
@@ -45,8 +45,8 @@ text = "First Plant
 script = SubResource("GDScript_jh00y")
 metadata/_edit_use_anchors_ = true
 
-[node name="Inventory" parent="Bakground/ColorRect" instance=ExtResource("4_082uo")]
-position = Vector2(654.166, -101.71)
+[node name="Inventory" parent="Bakground" instance=ExtResource("4_082uo")]
+position = Vector2(281.231, -403.653)
 scale = Vector2(0.491085, 0.448385)
 
 [connection signal="pressed" from="Bakground/ColorRect/Button" to="." method="_on_button_pressed"]

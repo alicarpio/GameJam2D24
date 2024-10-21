@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bobaukqjsib10"]
+
+[sub_resource type="TileSet" id="TileSet_i4hlk"]
+
+[node name="Table" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(462, 302)
+tile_set = SubResource("TileSet_i4hlk")
+rendering_quadrant_size = 29
+format = 2
