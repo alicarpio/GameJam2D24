@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c767s0aju07cx"
-path="res://.godot/imported/Succulent-middle-and-Pot.png-5227e48210f632b489a06cb8e1367f54.ctex"
+uid="uid://ns0wc6mipch"
+path="res://.godot/imported/madure.png-b253f18f261a5895546989287d183577.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plant/Succulent-middle-and-Pot.png"
-dest_files=["res://.godot/imported/Succulent-middle-and-Pot.png-5227e48210f632b489a06cb8e1367f54.ctex"]
+source_file="res://assets/Plant/madure.png"
+dest_files=["res://.godot/imported/madure.png-b253f18f261a5895546989287d183577.ctex"]
 
 [params]
 
