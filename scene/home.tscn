@@ -22,14 +22,14 @@ texture = ExtResource("1_xkrl3")
 position = Vector2(627, 193)
 
 [node name="Plant" parent="Bakground" instance=ExtResource("3_2u741")]
-position = Vector2(25, 79.4177)
-scale = Vector2(1.38889, 1.39329)
+position = Vector2(-19.4444, 5.57318)
+scale = Vector2(0.543996, 0.536255)
 
 [node name="ColorRect" type="ColorRect" parent="Bakground"]
-offset_left = -122.222
-offset_top = 252.186
-offset_right = 148.778
-offset_bottom = 330.186
+offset_left = -120.833
+offset_top = 323.244
+offset_right = 150.167
+offset_bottom = 401.244
 size_flags_vertical = 0
 color = Color(0.269755, 0.299167, 0.00297564, 1)
 metadata/_edit_use_anchors_ = true
