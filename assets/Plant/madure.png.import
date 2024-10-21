@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iuvd87pnf62s"
-path="res://.godot/imported/Succulent_baby.png-90b6e31f0c947cd41502f65576d8b24b.ctex"
+uid="uid://ns0wc6mipch"
+path="res://.godot/imported/madure.png-b253f18f261a5895546989287d183577.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plant/Succulent_baby.png"
-dest_files=["res://.godot/imported/Succulent_baby.png-90b6e31f0c947cd41502f65576d8b24b.ctex"]
+source_file="res://assets/Plant/madure.png"
+dest_files=["res://.godot/imported/madure.png-b253f18f261a5895546989287d183577.ctex"]
 
 [params]
 

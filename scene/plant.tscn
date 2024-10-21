@@ -1,29 +1,32 @@
 [gd_scene load_steps=4 format=3 uid="uid://cqgra5lv7ydku"]
 
-[ext_resource type="Texture2D" uid="uid://sdg3o2latrqp" path="res://icon.svg" id="1_ecwp4"]
+[ext_resource type="Texture2D" uid="uid://b6n2e5wrv5er8" path="res://assets/Plant/baby.png" id="1_fd8e6"]
 [ext_resource type="Script" path="res://Plant/Plant.gd" id="2_t51nt"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4sdb"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_861xw"]
 
 [node name="Plant" type="Node2D"]
 position = Vector2(500, 239)
+scale = Vector2(0.480001, 0.4)
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(-5, -5)
-texture = ExtResource("1_ecwp4")
+position = Vector2(-8.31251, -0.999997)
+scale = Vector2(8.86029, 6.82143)
+texture = ExtResource("1_fd8e6")
 script = ExtResource("2_t51nt")
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="Icon"]
-position = Vector2(1, 16)
-scale = Vector2(-9.30841, 9.08872)
-shape = SubResource("RectangleShape2D_a4sdb")
+position = Vector2(2.17967, 4.5445)
+scale = Vector2(2.30113, 2.61549)
+shape = SubResource("RectangleShape2D_861xw")
 
 [node name="Panel" type="Panel" parent="Icon"]
 visible = false
-offset_left = -125.0
-offset_top = 95.0
-offset_right = 144.0
-offset_bottom = 240.0
+offset_left = -23.7506
+offset_top = 28.0
+offset_right = 245.249
+offset_bottom = 173.0
+scale = Vector2(0.195263, 0.270168)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Icon/Panel"]
 layout_mode = 0
@@ -31,12 +34,15 @@ offset_left = 2.0
 offset_top = -1.0
 offset_right = 270.0
 offset_bottom = 145.0
+tab_size = 5
+language = "en"
 
 [node name="Button" type="Button" parent="Icon"]
-offset_left = -18.0
-offset_top = 68.0
-offset_right = 29.0
-offset_bottom = 92.0
+offset_left = -5.41036
+offset_top = 22.1361
+offset_right = 41.5896
+offset_bottom = 46.1361
+scale = Vector2(0.246612, 0.304629)
 
 [node name="Label" type="Label" parent="Icon/Button"]
 layout_mode = 0
