@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh6b1iafpavl5"
-path="res://.godot/imported/wolfFront.png-2686794873a87a2b73cf93a0c91f896d.ctex"
+uid="uid://jvjm0nv0nnoi"
+path="res://.godot/imported/Succulent-baby-and-Pot.png-a3dca3582f46c94084e5b696cfd0282a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Character/wolfFront.png"
-dest_files=["res://.godot/imported/wolfFront.png-2686794873a87a2b73cf93a0c91f896d.ctex"]
+source_file="res://assets/Plant/Succulent-baby-and-Pot.png"
+dest_files=["res://.godot/imported/Succulent-baby-and-Pot.png-a3dca3582f46c94084e5b696cfd0282a.ctex"]
 
 [params]
 

@@ -1,10 +1,47 @@
-[gd_scene load_steps=2 format=3 uid="uid://hqnocmn15kwg"]
+[gd_scene load_steps=6 format=3 uid="uid://hqnocmn15kwg"]
 
+[ext_resource type="Script" path="res://Home/home2.gd" id="1_8aaqq"]
 [ext_resource type="Texture2D" uid="uid://ekxu8aetei1k" path="res://assets/greenh.jpeg" id="1_xkrl3"]
+[ext_resource type="PackedScene" uid="uid://cqgra5lv7ydku" path="res://scene/plant.tscn" id="3_2u741"]
+
+[sub_resource type="FontVariation" id="FontVariation_178p4"]
+
+[sub_resource type="GDScript" id="GDScript_jh00y"]
 
 [node name="Home" type="Node2D"]
+script = ExtResource("1_8aaqq")
 
 [node name="Bakground" type="Sprite2D" parent="."]
 position = Vector2(578, 327)
 scale = Vector2(0.72, 0.717724)
 texture = ExtResource("1_xkrl3")
+
+[node name="Plant" parent="Bakground" instance=ExtResource("3_2u741")]
+position = Vector2(25, 79.4177)
+scale = Vector2(1.38889, 1.39329)
+
+[node name="ColorRect" type="ColorRect" parent="Bakground"]
+offset_left = -122.222
+offset_top = 252.186
+offset_right = 148.778
+offset_bottom = 330.186
+size_flags_vertical = 0
+color = Color(0.269755, 0.299167, 0.00297564, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Bakground/ColorRect"]
+modulate = Color(0, 1, 0.85, 1)
+self_modulate = Color(0.0156863, 1, 0.678431, 0.847059)
+layout_mode = 0
+offset_left = -1.38893
+offset_top = 8.82149e-05
+offset_right = 269.611
+offset_bottom = 78.0001
+theme_override_fonts/font = SubResource("FontVariation_178p4")
+theme_override_font_sizes/font_size = 30
+text = "First Plant 
+"
+script = SubResource("GDScript_jh00y")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Bakground/ColorRect/Button" to="." method="_on_button_pressed"]
