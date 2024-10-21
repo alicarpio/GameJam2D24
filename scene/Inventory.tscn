@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4foabsyo5l0c"]
+[gd_scene load_steps=5 format=3 uid="uid://be03dvx6lutnd"]
 
 [ext_resource type="Texture2D" uid="uid://3weo3oujsclq" path="res://assets/Inventory/inventorybutton.png" id="1_38gb5"]
 [ext_resource type="Script" path="res://scene/plants-inventory.gd" id="2_py00q"]
-[ext_resource type="Texture2D" uid="uid://ns0wc6mipch" path="res://assets/Plant/Succulent-mature-and-Pot.png" id="3_yaqyx"]
+[ext_resource type="Texture2D" uid="uid://ns0wc6mipch" path="res://assets/Plant/madure.png" id="3_yaqyx"]
 [ext_resource type="Texture2D" uid="uid://cqifk5aquprxx" path="res://assets/Plant/aloe-vera.png" id="4_lscx7"]
 
 [node name="Inventory" type="Node2D"]
