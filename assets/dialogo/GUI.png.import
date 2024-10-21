@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh6b1iafpavl5"
-path="res://.godot/imported/wolfFront.png-2686794873a87a2b73cf93a0c91f896d.ctex"
+uid="uid://43g44mh7dlw5"
+path="res://.godot/imported/GUI.png-9d09de99aabaf5dcf715be94066fa165.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Character/wolfFront.png"
-dest_files=["res://.godot/imported/wolfFront.png-2686794873a87a2b73cf93a0c91f896d.ctex"]
+source_file="res://assets/dialogo/GUI.png"
+dest_files=["res://.godot/imported/GUI.png-9d09de99aabaf5dcf715be94066fa165.ctex"]
 
 [params]
 

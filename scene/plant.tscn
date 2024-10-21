@@ -31,6 +31,8 @@ offset_left = 2.0
 offset_top = -1.0
 offset_right = 270.0
 offset_bottom = 145.0
+tab_size = 5
+language = "en"
 
 [node name="Button" type="Button" parent="Icon"]
 offset_left = -18.0

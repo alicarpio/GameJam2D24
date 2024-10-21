@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tbac7yp20vev"
-path="res://.godot/imported/wolfRight.png-d3a90ff22c32725e7f0f77ec5ab4497b.ctex"
+path="res://.godot/imported/wolfRight.png-485c3a10a199b57e76b43999a33a2a50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Personaje/wolfRight.png"
-dest_files=["res://.godot/imported/wolfRight.png-d3a90ff22c32725e7f0f77ec5ab4497b.ctex"]
+source_file="res://assets/Character/wolfRight.png"
+dest_files=["res://.godot/imported/wolfRight.png-485c3a10a199b57e76b43999a33a2a50.ctex"]
 
 [params]
 

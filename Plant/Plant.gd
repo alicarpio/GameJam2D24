@@ -39,7 +39,11 @@ func _on_button_pressed() -> void:
 func toggle_info_panel():
 	info_panel.visible = !info_panel.visible  # Alterna visibilidad del panel
 	if info_panel.visible:
-		info_richtext.text = "Tipo: Flor
-Riego: Semanal
-Info : lalalala
-"  # Texto de ejemplo # Asigna el texto de información de la planta
+		info_richtext.text = "Type: Succulent
+Name: Echeveria
+
+Watering: When the ground is completely dry, it is preferable that it goes thirsty than to drown it.
+
+Illumination: It needs a lot of luminosity and appreciates some direct sun, if we have it in pot inside the house, we will have to look for a space with a good dose of daily light.
+
+Data: They are herbaceous, succulent, perennial, acaulescent plants or with simple or branched stems. The leaves are flattened and fleshy, arranged in the form of a rosette. They are green or brown, often with reddish apex and margin."  # Texto de ejemplo # Asigna el texto de información de la planta
