@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqgra5lv7ydku"]
+
+[ext_resource type="Texture2D" uid="uid://sdg3o2latrqp" path="res://icon.svg" id="1_ecwp4"]
+[ext_resource type="Script" path="res://Plant/Plant.gd" id="2_t51nt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4sdb"]
+
+[node name="Plant" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(328, 151)
+texture = ExtResource("1_ecwp4")
+script = ExtResource("2_t51nt")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Icon"]
+position = Vector2(7, 13)
+scale = Vector2(-9.30841, 9.08872)
+shape = SubResource("RectangleShape2D_a4sdb")
+
+[node name="Panel" type="Panel" parent="Icon"]
+visible = false
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 271.0
+offset_bottom = 144.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Icon/Panel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 270.0
+offset_bottom = 145.0
+
+[node name="Button" type="Button" parent="Icon"]
+offset_left = -18.0
+offset_top = 68.0
+offset_right = 29.0
+offset_bottom = 92.0
+
+[node name="Label" type="Label" parent="Icon/Button"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 2.0
+offset_right = 40.0
+offset_bottom = 25.0
+text = "info"
+
+[connection signal="pressed" from="Icon/TouchScreenButton" to="Icon" method="_on_touch_screen_button_pressed"]
+[connection signal="released" from="Icon/TouchScreenButton" to="Icon" method="_on_touch_screen_button_released"]
