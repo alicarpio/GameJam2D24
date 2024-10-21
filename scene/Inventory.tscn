@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4foabsyo5l0c"]
+
+[ext_resource type="Texture2D" uid="uid://3weo3oujsclq" path="res://assets/Inventory/inventorybutton.png" id="1_38gb5"]
+[ext_resource type="Script" path="res://scene/plants-inventory.gd" id="2_py00q"]
+[ext_resource type="Texture2D" uid="uid://ns0wc6mipch" path="res://assets/Plant/Succulent-mature-and-Pot.png" id="3_yaqyx"]
+[ext_resource type="Texture2D" uid="uid://cqifk5aquprxx" path="res://assets/Plant/aloe-vera.png" id="4_lscx7"]
+
+[node name="Inventory" type="Node2D"]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 500.0
+offset_bottom = 500.0
+texture_normal = ExtResource("1_38gb5")
+texture_pressed = ExtResource("1_38gb5")
+texture_hover = ExtResource("1_38gb5")
+script = ExtResource("2_py00q")
+
+[node name="PopupMenu" type="PopupMenu" parent="TextureButton"]
+item_count = 2
+item_0/text = "Suculenta"
+item_0/icon = ExtResource("3_yaqyx")
+item_1/text = "Aloe Vera"
+item_1/icon = ExtResource("4_lscx7")
+item_1/id = 1

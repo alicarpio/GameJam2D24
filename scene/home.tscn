@@ -1,7 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://hqnocmn15kwg"]
 [gd_scene load_steps=6 format=3 uid="uid://hqnocmn15kwg"]
 
 [ext_resource type="Script" path="res://Home/home2.gd" id="1_8aaqq"]
 [ext_resource type="Texture2D" uid="uid://ekxu8aetei1k" path="res://assets/greenh.jpeg" id="1_xkrl3"]
+[ext_resource type="PackedScene" uid="uid://d4foabsyo5l0c" path="res://scene/Inventory.tscn" id="2_5p2lo"]
 [ext_resource type="PackedScene" uid="uid://cqgra5lv7ydku" path="res://scene/plant.tscn" id="3_2u741"]
 
 [sub_resource type="FontVariation" id="FontVariation_178p4"]
@@ -15,6 +17,9 @@ script = ExtResource("1_8aaqq")
 position = Vector2(578, 327)
 scale = Vector2(0.72, 0.717724)
 texture = ExtResource("1_xkrl3")
+
+[node name="Inventory" parent="." instance=ExtResource("2_5p2lo")]
+position = Vector2(627, 193)
 
 [node name="Plant" parent="Bakground" instance=ExtResource("3_2u741")]
 position = Vector2(25, 79.4177)
@@ -39,7 +44,7 @@ offset_right = 269.611
 offset_bottom = 78.0001
 theme_override_fonts/font = SubResource("FontVariation_178p4")
 theme_override_font_sizes/font_size = 30
-text = "First Plant 
+text = "First Plant
 "
 script = SubResource("GDScript_jh00y")
 metadata/_edit_use_anchors_ = true
