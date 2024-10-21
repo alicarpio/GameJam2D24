@@ -8,16 +8,17 @@
 [node name="Plant" type="Node2D"]
 position = Vector2(500, 239)
 scale = Vector2(0.480001, 0.4)
+metadata/_edit_vertical_guides_ = [-85.0]
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(-8.31251, -0.999997)
-scale = Vector2(8.86029, 6.82143)
+position = Vector2(56.104, 88.6875)
+scale = Vector2(16.4387, 15.3631)
 texture = ExtResource("1_fd8e6")
 script = ExtResource("2_t51nt")
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="Icon"]
-position = Vector2(2.17967, 4.5445)
-scale = Vector2(2.30113, 2.61549)
+position = Vector2(0.38906, 7.40818)
+scale = Vector2(1.20602, 2.20667)
 shape = SubResource("RectangleShape2D_861xw")
 
 [node name="Panel" type="Panel" parent="Icon"]
@@ -38,19 +39,58 @@ tab_size = 5
 language = "en"
 
 [node name="Button" type="Button" parent="Icon"]
-offset_left = -5.41036
-offset_top = 22.1361
-offset_right = 41.5896
-offset_bottom = 46.1361
+offset_left = -3.66639
+offset_top = 22.8673
+offset_right = 30.3336
+offset_bottom = 38.8673
 scale = Vector2(0.246612, 0.304629)
 
 [node name="Label" type="Label" parent="Icon/Button"]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 2.0
-offset_right = 40.0
-offset_bottom = 25.0
+offset_left = 6.60421
+offset_top = 0.020997
+offset_right = 37.6042
+offset_bottom = 23.021
+scale = Vector2(0.614258, 0.566243)
 text = "info"
+
+[node name="ProgressBarWater" type="ProgressBar" parent="Icon"]
+offset_left = -5.56739
+offset_top = 12.1273
+offset_right = 20.4326
+offset_bottom = 39.1273
+scale = Vector2(0.186186, 0.139061)
+size_flags_horizontal = 4
+size_flags_vertical = 1
+size_flags_stretch_ratio = 1.05
+
+[node name="Label" type="Label" parent="Icon/ProgressBarWater"]
+layout_mode = 0
+offset_left = 38.7988
+offset_top = 4.68075
+offset_right = 92.7988
+offset_bottom = 27.6807
+scale = Vector2(0.576436, 0.760362)
+text = "WATER"
+
+[node name="ProgressBarSun" type="ProgressBar" parent="Icon"]
+offset_left = -5.06045
+offset_top = 16.5209
+offset_right = 20.9395
+offset_bottom = 43.5209
+scale = Vector2(0.151952, 0.139061)
+size_flags_horizontal = 4
+size_flags_vertical = 1
+size_flags_stretch_ratio = 1.05
+
+[node name="Label" type="Label" parent="Icon/ProgressBarSun"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 4.0
+offset_right = 76.0
+offset_bottom = 27.0
+scale = Vector2(0.965499, 0.808105)
+text = "SUN"
 
 [connection signal="pressed" from="Icon/TouchScreenButton" to="Icon" method="_on_touch_screen_button_pressed"]
 [connection signal="released" from="Icon/TouchScreenButton" to="Icon" method="_on_touch_screen_button_released"]
