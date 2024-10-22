@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://hqnocmn15kwg"]
+[gd_scene load_steps=8 format=3 uid="uid://hqnocmn15kwg"]
 
 [ext_resource type="Script" path="res://Home/home2.gd" id="1_8aaqq"]
 [ext_resource type="Texture2D" uid="uid://bbjk0pjq0tpn2" path="res://assets/home.png" id="2_11mok"]
 [ext_resource type="PackedScene" uid="uid://cqgra5lv7ydku" path="res://scene/plant.tscn" id="3_2u741"]
 [ext_resource type="PackedScene" uid="uid://be03dvx6lutnd" path="res://scene/Inventory.tscn" id="4_082uo"]
+[ext_resource type="PackedScene" uid="uid://bobaukqjsib10" path="res://scene/table.tscn" id="5_t1rj6"]
 
 [sub_resource type="FontVariation" id="FontVariation_178p4"]
 
@@ -13,9 +14,13 @@
 script = ExtResource("1_8aaqq")
 
 [node name="Bakground" type="Sprite2D" parent="."]
-position = Vector2(577.68, 301.263)
-scale = Vector2(1.235, 0.761206)
+position = Vector2(577.5, 322.25)
+scale = Vector2(1.12402, 0.638184)
 texture = ExtResource("2_11mok")
+
+[node name="Table" parent="Bakground" instance=ExtResource("5_t1rj6")]
+position = Vector2(-520.007, -492.413)
+scale = Vector2(0.889661, 1.56695)
 
 [node name="Plant" parent="Bakground" instance=ExtResource("3_2u741")]
 position = Vector2(-19.1741, -123.833)
