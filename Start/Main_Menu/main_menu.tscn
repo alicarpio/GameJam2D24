@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddgx2c06h4a7n"]
+[gd_scene load_steps=4 format=3 uid="uid://ddgx2c06h4a7n"]
 
-[ext_resource type="Script" path="res://Main_Menu/main_menu.gd" id="1_j63dv"]
-[ext_resource type="Texture2D" uid="uid://dnd1vrqx3fa3m" path="res://Fondo_Main_Menu.PNG" id="2_1uhq5"]
+[ext_resource type="Texture2D" uid="uid://dnd1vrqx3fa3m" path="res://Start/Fondo_Main_Menu.PNG" id="2_1uhq5"]
 
 [sub_resource type="SystemFont" id="SystemFont_1xoo6"]
 font_names = PackedStringArray("Impact")
@@ -18,7 +17,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_j63dv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
