@@ -6,28 +6,27 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_861xw"]
 
 [node name="Plant" type="Node2D"]
-position = Vector2(500, 239)
+position = Vector2(487, 210)
 scale = Vector2(0.480001, 0.4)
 metadata/_edit_vertical_guides_ = [-85.0]
 
 [node name="Icon" type="Sprite2D" parent="."]
 position = Vector2(56.104, 88.6875)
-scale = Vector2(16.4387, 15.3631)
+scale = Vector2(14.8554, 13.6631)
 texture = ExtResource("1_fd8e6")
 script = ExtResource("2_t51nt")
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="Icon"]
-position = Vector2(0.38906, 7.40818)
-scale = Vector2(1.20602, 2.20667)
+position = Vector2(8.24653, 0.899067)
+scale = Vector2(1.76556, 1.44511)
 shape = SubResource("RectangleShape2D_861xw")
 
 [node name="Panel" type="Panel" parent="Icon"]
-visible = false
-offset_left = -23.7506
-offset_top = 28.0
-offset_right = 245.249
-offset_bottom = 173.0
-scale = Vector2(0.195263, 0.270168)
+offset_left = -10.6485
+offset_top = -28.6309
+offset_right = 258.351
+offset_bottom = 116.369
+scale = Vector2(0.142013, 0.125237)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Icon/Panel"]
 layout_mode = 0
@@ -39,10 +38,10 @@ tab_size = 5
 language = "en"
 
 [node name="Button" type="Button" parent="Icon"]
-offset_left = -3.66639
-offset_top = 22.8673
-offset_right = 30.3336
-offset_bottom = 38.8673
+offset_left = 12.6822
+offset_top = 3.99088
+offset_right = 46.6822
+offset_bottom = 19.9909
 scale = Vector2(0.246612, 0.304629)
 
 [node name="Label" type="Label" parent="Icon/Button"]
@@ -55,10 +54,10 @@ scale = Vector2(0.614258, 0.566243)
 text = "info"
 
 [node name="ProgressBarWater" type="ProgressBar" parent="Icon"]
-offset_left = -5.56739
-offset_top = 12.1273
-offset_right = 20.4326
-offset_bottom = 39.1273
+offset_left = 10.7812
+offset_top = -6.74913
+offset_right = 36.7812
+offset_bottom = 20.2509
 scale = Vector2(0.186186, 0.139061)
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -74,10 +73,10 @@ scale = Vector2(0.576436, 0.760362)
 text = "WATER"
 
 [node name="ProgressBarSun" type="ProgressBar" parent="Icon"]
-offset_left = -5.06045
-offset_top = 16.5209
-offset_right = 20.9395
-offset_bottom = 43.5209
+offset_left = 11.2881
+offset_top = -2.35553
+offset_right = 37.2881
+offset_bottom = 24.6445
 scale = Vector2(0.151952, 0.139061)
 size_flags_horizontal = 4
 size_flags_vertical = 1
